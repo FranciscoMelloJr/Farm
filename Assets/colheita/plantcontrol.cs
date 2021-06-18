@@ -6,6 +6,7 @@ public class plantcontrol : MonoBehaviour
 {
 
     public Sprite noPlantObj;
+
     public Sprite sunFlower1;
     public Sprite sunFlower2;
 
@@ -21,6 +22,7 @@ public class plantcontrol : MonoBehaviour
     public string watered = "n";
 
     public string currentSeed = "";
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,20 +32,20 @@ public class plantcontrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentSeed != "") 
+        if (currentSeed != "")
         {
             growTime += Time.deltaTime;
         }
 
-        if ((growTime > 5) && (watered == "n")) 
+        if ((growTime > 5) && (watered == "n"))
         {
             currentSeed = "";
             growTime = 0;
             GetComponent<SpriteRenderer>().sprite = noPlantObj;
         }
-        if ((growTime > 5) && (watered == "y"))
+        if ((growTime > 3) && (watered == "y"))
         {
-            if (currentSeed == "sunflower") 
+            if (currentSeed == "sunflower")
             {
                 GetComponent<SpriteRenderer>().sprite = sunFlower2;
             }
@@ -56,7 +58,6 @@ public class plantcontrol : MonoBehaviour
                 GetComponent<SpriteRenderer>().sprite = potato2;
             }
         }
-
     }
 
     void OnMouseDown() 
@@ -64,34 +65,35 @@ public class plantcontrol : MonoBehaviour
       //Debug.Log("clicked on weed");
         if (ScriptGM.currentTool == "scythe")
         {
-            //Destroy(gameObject);
             GetComponent<SpriteRenderer>().sprite = noPlantObj;
-        } 
+        }
+
+      //  if ((ScriptGM.currentTool == "seeds") && (GetComponent<SpriteRenderer>().sprite == noPlantObj))
+      //  {
+      //      GetComponent<SpriteRenderer>().sprite = sunFlower1;
+      //  }
 
         if ((ScriptGM.currentTool == "sunflower") && (GetComponent<SpriteRenderer>().sprite ==  noPlantObj))
         {
-            //Destroy(gameObject);
             GetComponent<SpriteRenderer>().sprite = sunFlower1;
             currentSeed = "sunflower";
         }
+
         if ((ScriptGM.currentTool == "carrot") && (GetComponent<SpriteRenderer>().sprite == noPlantObj))
         {
-            //Destroy(gameObject);
             GetComponent<SpriteRenderer>().sprite = carrot1;
             currentSeed = "carrot";
         }
+
         if ((ScriptGM.currentTool == "potato") && (GetComponent<SpriteRenderer>().sprite == noPlantObj))
         {
-            //Destroy(gameObject);
             GetComponent<SpriteRenderer>().sprite = potato1;
             currentSeed = "potato";
         } 
 
-
         if (ScriptGM.currentTool == "bucket")
         {
-            //Destroy(gameObject);
-            plotObj.GetComponent<SpriteRenderer>().color = new Color(0,0,1);
+            plotObj.GetComponent<SpriteRenderer>().color = new Color(0.60f, 0.45f, 0.05f);
             watered = "y";
         }
     }

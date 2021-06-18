@@ -26,8 +26,8 @@ public class tools : MonoBehaviour
         }
         if (gameObject.name == "seeds")
         {
-           // ScriptGM.currentTool = "seeds";
-            seedInvObj.transform.position = new Vector2(3, 3);
+           //ScriptGM.currentTool = "seeds";
+           seedInvObj.transform.position = new Vector2(6, 3);
         }
         if (gameObject.name == "bucket")
         {
