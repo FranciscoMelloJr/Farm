@@ -45,15 +45,15 @@ public class plantcontrol : MonoBehaviour
         }
         if ((growTime > 3) && (watered == "y"))
         {
-            if (currentSeed == "sunflower")
+            if (currentSeed == "girassol")
             {
                 GetComponent<SpriteRenderer>().sprite = sunFlower2;
             }
-            if (currentSeed == "carrot")
+            if (currentSeed == "cenoura")
             {
                 GetComponent<SpriteRenderer>().sprite = carrot2;
             }
-            if (currentSeed == "potato")
+            if (currentSeed == "batata")
             {
                 GetComponent<SpriteRenderer>().sprite = potato2;
             }
@@ -63,7 +63,7 @@ public class plantcontrol : MonoBehaviour
     void OnMouseDown() 
     {    
       //Debug.Log("clicked on weed");
-        if (ScriptGM.currentTool == "scythe")
+        if (ScriptGM.currentTool == "foice")
         {
             GetComponent<SpriteRenderer>().sprite = noPlantObj;
         }
@@ -73,25 +73,25 @@ public class plantcontrol : MonoBehaviour
       //      GetComponent<SpriteRenderer>().sprite = sunFlower1;
       //  }
 
-        if ((ScriptGM.currentTool == "sunflower") && (GetComponent<SpriteRenderer>().sprite ==  noPlantObj))
+        if ((ScriptGM.currentTool == "girassol") && (GetComponent<SpriteRenderer>().sprite ==  noPlantObj))
         {
             GetComponent<SpriteRenderer>().sprite = sunFlower1;
-            currentSeed = "sunflower";
+            currentSeed = "girassol";
         }
 
-        if ((ScriptGM.currentTool == "carrot") && (GetComponent<SpriteRenderer>().sprite == noPlantObj))
+        if ((ScriptGM.currentTool == "cenoura") && (GetComponent<SpriteRenderer>().sprite == noPlantObj))
         {
             GetComponent<SpriteRenderer>().sprite = carrot1;
-            currentSeed = "carrot";
+            currentSeed = "cenoura";
         }
 
-        if ((ScriptGM.currentTool == "potato") && (GetComponent<SpriteRenderer>().sprite == noPlantObj))
+        if ((ScriptGM.currentTool == "batata") && (GetComponent<SpriteRenderer>().sprite == noPlantObj))
         {
             GetComponent<SpriteRenderer>().sprite = potato1;
-            currentSeed = "potato";
+            currentSeed = "batata";
         } 
 
-        if (ScriptGM.currentTool == "bucket")
+        if (ScriptGM.currentTool == "balde")
         {
             plotObj.GetComponent<SpriteRenderer>().color = new Color(0.60f, 0.45f, 0.05f);
             watered = "y";

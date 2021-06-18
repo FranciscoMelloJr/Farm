@@ -20,18 +20,18 @@ public class tools : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (gameObject.name == "scythe")
+        if (gameObject.name == "foice")
         {
-            ScriptGM.currentTool = "scythe";
+            ScriptGM.currentTool = "foice";
         }
-        if (gameObject.name == "seeds")
+        if (gameObject.name == "sementes")
         {
-           //ScriptGM.currentTool = "seeds";
+           //ScriptGM.currentTool = "sementes";
            seedInvObj.transform.position = new Vector2(6, 3);
         }
-        if (gameObject.name == "bucket")
+        if (gameObject.name == "balde")
         {
-            ScriptGM.currentTool = "bucket";
+            ScriptGM.currentTool = "balde";
         }
 
         cursorObj.transform.position = transform.position;

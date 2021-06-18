@@ -13,15 +13,15 @@ public class txtinfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.name == "sunflowerTxt") 
+        if (gameObject.name == "girassolTxt") 
         {
             GetComponent<TextMesh>().text = "Sementes de Girassol :" + ScriptGM.sunflowerSeeds;
         }
-        if (gameObject.name == "carrotTxt")
+        if (gameObject.name == "cenouraTxt")
         {
             GetComponent<TextMesh>().text = "Sementes de Cenoura :" + ScriptGM.carrotSeeds;
         }
-        if (gameObject.name == "potatoTxt")
+        if (gameObject.name == "batataTxt")
         {
             GetComponent<TextMesh>().text = "Sementes de batata  :" + ScriptGM.potatoSeeds;
         }
@@ -29,17 +29,17 @@ public class txtinfo : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (gameObject.name == "sunflowerTxt")
+        if (gameObject.name == "girassolTxt")
         {
-            ScriptGM.currentTool = "sunflower";
+            ScriptGM.currentTool = "girassol";
         }
-        if (gameObject.name == "carrotTxt")
+        if (gameObject.name == "cenouraTxt")
         {
-            ScriptGM.currentTool = "carrot";
+            ScriptGM.currentTool = "cenoura";
         }
-        if (gameObject.name == "potatoTxt")
+        if (gameObject.name == "batataTxt")
         {
-            ScriptGM.currentTool = "potato";
+            ScriptGM.currentTool = "batata";
         }
     }
 }
