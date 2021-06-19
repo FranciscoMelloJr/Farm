@@ -15,7 +15,7 @@ public class ScriptGM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int xPos = -8; xPos < 10; xPos += 2)
+        for (int xPos = -10; xPos < 12; xPos += 2)
         {
             for(int yPos = 5; yPos > -6; yPos -= 2)
             {

@@ -6,6 +6,7 @@ public class plantcontrol : MonoBehaviour
 {
 
     public Sprite noPlantObj;
+    public Sprite weedDead;
 
     public Sprite sunFlower1;
     public Sprite sunFlower2;
@@ -37,13 +38,13 @@ public class plantcontrol : MonoBehaviour
             growTime += Time.deltaTime;
         }
 
-        if ((growTime > 5) && (watered == "n"))
+        if ((growTime > 7) && (watered == "n"))
         {
             currentSeed = "";
             growTime = 0;
-            GetComponent<SpriteRenderer>().sprite = noPlantObj;
+            GetComponent<SpriteRenderer>().sprite = weedDead;
         }
-        if ((growTime > 3) && (watered == "y"))
+        if ((growTime > 2) && (watered == "y"))
         {
             if (currentSeed == "girassol")
             {
