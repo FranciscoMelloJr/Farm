@@ -8,9 +8,9 @@ public class ScriptGM : MonoBehaviour
     public Transform grassObj;
     public static string currentTool = "none";
 
-    public static int sunflowerSeeds = 5;
-    public static int potatoSeeds = 4;
-    public static int carrotSeeds = 3;
+    public static int sunflowerSeeds = 3;
+    public static int potatoSeeds = 7;
+    public static int carrotSeeds = 5;
 
     // Start is called before the first frame update
     void Start()

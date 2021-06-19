@@ -10,12 +10,15 @@ public class plantcontrol : MonoBehaviour
 
     public Sprite sunFlower1;
     public Sprite sunFlower2;
+    public Sprite sunFlower3;
 
     public Sprite potato1;
     public Sprite potato2;
+    public Sprite potato3;
 
     public Sprite carrot1;
     public Sprite carrot2;
+    public Sprite carrot3;
 
     public float growTime = 0;
 
@@ -38,13 +41,13 @@ public class plantcontrol : MonoBehaviour
             growTime += Time.deltaTime;
         }
 
-        if ((growTime > 7) && (watered == "n"))
+        if ((growTime > 10) && (watered == "n"))
         {
             currentSeed = "";
             growTime = 0;
             GetComponent<SpriteRenderer>().sprite = weedDead;
         }
-        if ((growTime > 2) && (watered == "y"))
+        if ((growTime > 3) && (watered == "y"))
         {
             if (currentSeed == "girassol")
             {
@@ -57,6 +60,22 @@ public class plantcontrol : MonoBehaviour
             if (currentSeed == "batata")
             {
                 GetComponent<SpriteRenderer>().sprite = potato2;
+            }
+        }
+
+        if ((growTime > 8) && (watered == "y"))
+        {
+            if (currentSeed == "girassol")
+            {
+                GetComponent<SpriteRenderer>().sprite = sunFlower3;
+            }
+            if (currentSeed == "cenoura")
+            {
+                GetComponent<SpriteRenderer>().sprite = carrot3;
+            }
+            if (currentSeed == "batata")
+            {
+                GetComponent<SpriteRenderer>().sprite = potato3;
             }
         }
     }
@@ -82,7 +101,8 @@ public class plantcontrol : MonoBehaviour
 
         if ((ScriptGM.currentTool == "cenoura") && (GetComponent<SpriteRenderer>().sprite == noPlantObj))
         {
-            GetComponent<SpriteRenderer>().sprite = carrot1;
+            
+            GetComponent<SpriteRenderer>().sprite = potato1;
             currentSeed = "cenoura";
         }
 
