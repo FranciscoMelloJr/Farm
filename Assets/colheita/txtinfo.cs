@@ -5,6 +5,10 @@ using UnityEngine;
 public class txtinfo : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public Transform smallCursorObj;
+    public Transform obj;
+
     void Start()
     {
         GetComponent<Renderer>().sortingOrder = 6;
@@ -41,5 +45,7 @@ public class txtinfo : MonoBehaviour
         {
             ScriptGM.currentTool = "batata";
         }
+
+        smallCursorObj.transform.position = obj.position;
     }
 }

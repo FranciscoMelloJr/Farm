@@ -5,7 +5,7 @@ using UnityEngine;
 public class tools : MonoBehaviour
 { 
     public Transform cursorObj;
-    public Transform seedInvObj;
+    public Transform inventarioObj;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +26,12 @@ public class tools : MonoBehaviour
         }
         if (gameObject.name == "sementes")
         {
-           //ScriptGM.currentTool = "sementes";
-           seedInvObj.transform.position = new Vector2(6, 3);
+            //ScriptGM.currentTool = "sementes";
+            inventarioObj.transform.position = new Vector2(6.75f, -3.75f);
+        }
+        else
+        {
+            inventarioObj.transform.position = new Vector2(13.5f, -3.75f);
         }
         if (gameObject.name == "balde")
         {
