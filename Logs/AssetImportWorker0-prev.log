@@ -15,11 +15,11 @@ C:/Users/Franc/Documents/GitHub/Farm
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-1051
+19168
 Successfully changed project path to: C:/Users/Franc/Documents/GitHub/Farm
 C:/Users/Franc/Documents/GitHub/Farm
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 42.46 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 46.73 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.9f1 (108be757e447)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -35,107 +35,85 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56696
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002611 seconds.
+Registered in 0.002396 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 41.75 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 52.24 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.480 seconds
+- Completed reload, in  1.460 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001159 seconds.
+Registered in 0.001110 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.41 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 72.23 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.170 seconds
+- Completed reload, in  1.218 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.33 seconds
-Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.23 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 85.0 MB.
 System memory in use after: 84.9 MB.
 
 Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2254.
-Total: 2.870900 ms (FindLiveObjects: 0.247400 ms CreateObjectMapping: 0.102800 ms MarkObjects: 2.372900 ms  DeleteObjects: 0.146400 ms)
+Total: 2.794800 ms (FindLiveObjects: 0.177600 ms CreateObjectMapping: 0.054400 ms MarkObjects: 2.383000 ms  DeleteObjects: 0.178700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/colheita/sementes.png
-  artifactKey: Guid(668eeefd4c110b345bed3754c130a6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/colheita/sementes.png using Guid(668eeefd4c110b345bed3754c130a6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4155f2838ddecdcdd1e1900810c6359') in 0.167075 seconds
-  Import took 0.170823 seconds .
+  path: Assets/colheita/colheita.jpg
+  artifactKey: Guid(43e53368995b5eb49b0d0073b22b785f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/colheita/colheita.jpg using Guid(43e53368995b5eb49b0d0073b22b785f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d9b9da17967e163334b74dc4b9fbea') in 0.119615 seconds
+  Import took 0.123036 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001145 seconds.
+Registered in 0.001278 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.986 seconds
+- Completed reload, in  1.044 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 88.0 MB.
 System memory in use after: 88.0 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2264.
-Total: 2.432300 ms (FindLiveObjects: 0.205000 ms CreateObjectMapping: 0.095400 ms MarkObjects: 2.025500 ms  DeleteObjects: 0.105400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.334669 seconds.
-  path: Assets/colheita/plantcontrol.cs
-  artifactKey: Guid(b0c22c5b9a90485448c9c277ab9ffca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/colheita/plantcontrol.cs using Guid(b0c22c5b9a90485448c9c277ab9ffca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc87f0c68b3320811e05d624fe08492a') in 0.017456 seconds
-  Import took 0.022264 seconds .
+Total: 2.414800 ms (FindLiveObjects: 0.260300 ms CreateObjectMapping: 0.082200 ms MarkObjects: 1.937700 ms  DeleteObjects: 0.133600 ms)
 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001300 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 2.20 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.010 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.0 MB.
-System memory in use after: 88.0 MB.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 52.5 MB.
+System memory in use after: 52.5 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2268.
-Total: 2.425000 ms (FindLiveObjects: 0.284100 ms CreateObjectMapping: 0.085600 ms MarkObjects: 1.926100 ms  DeleteObjects: 0.128400 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2264.
+Total: 2.423400 ms (FindLiveObjects: 0.276900 ms CreateObjectMapping: 0.070600 ms MarkObjects: 1.924000 ms  DeleteObjects: 0.151200 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 352.565580 seconds.
-  path: Assets/colheita/plantcontrol.cs
-  artifactKey: Guid(b0c22c5b9a90485448c9c277ab9ffca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/colheita/plantcontrol.cs using Guid(b0c22c5b9a90485448c9c277ab9ffca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de49975ead95bdd2d607989ca502b3b') in 0.009713 seconds
-  Import took 0.013406 seconds .
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 52.5 MB.
+System memory in use after: 52.5 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000916 seconds.
-  path: Assets/colheita/plantcontrol.cs
-  artifactKey: Guid(b0c22c5b9a90485448c9c277ab9ffca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/colheita/plantcontrol.cs using Guid(b0c22c5b9a90485448c9c277ab9ffca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de49975ead95bdd2d607989ca502b3b') in 0.004191 seconds
-  Import took 0.008162 seconds .
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2264.
+Total: 2.480500 ms (FindLiveObjects: 0.172300 ms CreateObjectMapping: 0.064400 ms MarkObjects: 2.107100 ms  DeleteObjects: 0.136000 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
